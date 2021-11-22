@@ -23,4 +23,4 @@ RUN mongo explorerdb mongo.js
 RUN npm install --production
 #open service port
 EXPOSE 9999 19999
-CMD ["muscleupcoind", "--printtoconsole"]
+CMD ["npm", "start"]
