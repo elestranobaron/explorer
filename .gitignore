@@ -34,3 +34,6 @@ settings.json
 .DS_Store
 
 package-lock.json
+
+mongo.js
+*_cool
