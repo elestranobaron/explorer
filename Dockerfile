@@ -21,4 +21,4 @@ RUN apt-get install -y mongodb-org
 
 #open service port
 EXPOSE 9999 19999
-CMD mongod --fork -f /etc/mongod.conf && npm install forever -g && cd explorer && mongo explorerdb mongo.js && npm i -g npm-check-updates && ncu -u && npm install --production && forever start -c "npm start" ./
+CMD mongod --fork -f /etc/mongod.conf && npm install forever -g && cd explorer && mongo explorerdb mongo.js && npm i -g npm-check-updates && ncu -u && npm install --production && cp encoding.js explorer/node_modules/whatwg-url/lib/encoding.js && cp database.js explorer/lib/database.js && forever start -c "npm start" ./
